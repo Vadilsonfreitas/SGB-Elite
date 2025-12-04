@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB-Elite | Acesso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-box card">
+            <div class="logo-placeholder">
+                <img src="assets/logo.png" alt="Logo Barbearia Elite" style="max-width: 180px;">
+            </div>
+            <h2 class="gold-text" style="margin-top: 20px;">Acesso ao Sistema</h2>
+            <p style="color: var(--text-grey); margin-bottom: 30px;">Selecione seu perfil para entrar.</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="roleSelect">ENTRAR COMO:</label>
+                    <select id="roleSelect" name="roleSelect" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="admin">👑 Dono (Administrador)</option>
+                        <option value="gestor">🧑‍💻 Gestor de Atendimento</option>
+                        <option value="barbeiro">💈 Barbeiro</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="username">USUÁRIO:</label>
+                    <input type="text" id="username" required placeholder="Seu nome de usuário">
+                </div>
+                <div class="input-group">
+                    <label for="password">SENHA:</label>
+                    <input type="password" id="password" required placeholder="Sua senha">
+                </div>
+                <button type="submit" class="btn btn-gold" style="width: 100%;">ACESSAR PAINEL</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

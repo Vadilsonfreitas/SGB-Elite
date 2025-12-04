@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB-Elite | Relatórios Completos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="assets/logo.png" alt="SGB-Elite"></div>
+        <div class="nav-menu">
+            <button class="btn btn-outline" onclick="navigateTo('dash_admin.html')">⬅ Voltar ao Painel Admin</button>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <h1>Relatórios Financeiros Completos (CU-04)</h1>
+        <p class="gold-text">Acesso exclusivo da gerência estratégica.</p>
+
+        <div class="card" style="margin-top: 30px;">
+             <h2>Fecho de Caixa Consolidado</h2>
+             <p>Simulação de dados financeiros globais da barbearia.</p>
+             
+             <div style="background: #000; padding: 20px; margin-top: 20px; border: 1px dashed var(--gold-dark);">
+                 <p><strong>Total Receita Bruta (Mês):</strong> 450.000 Kz</p>
+                 <p><strong>Total Salários Fixos a Pagar:</strong> 225.000 Kz</p>
+                 <p><strong>Total Bónus (40%) a Pagar:</strong> 85.000 Kz</p>
+                 <hr style="border-color: var(--gold-dark);">
+                 <p class="gold-text" style="font-size: 1.2em;"><strong>Lucro Operacional Estimado:</strong> 140.000 Kz</p>
+             </div>
+
+             <div style="margin-top: 30px; display: flex; gap: 15px;">
+                 <button class="btn btn-gold">📄 Exportar PDF</button>
+                 <button class="btn btn-outline">📊 Exportar CSV</button>
+             </div>
+        </div>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB-Elite | Barbeiro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="assets/logo.png" alt="SGB-Elite"></div>
+        <div class="nav-menu">
+            <span style="margin-right: 15px;">Olá, <span id="user-name-display" class="gold-text"></span></span>
+            <button class="btn btn-logout" onclick="logout()">SAIR</button>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <h1>Meu Painel Profissional</h1>
+        
+        <section class="stats-grid">
+            <div class="stat-card"><h3>Meus Cortes Hoje</h3><p>8</p></div>
+            <div class="stat-card"><h3>Bónus Fim de Semana (Est.)</h3><p>1.600 Kz</p></div>
+            <div class="stat-card"><h3>Salário Base Mensal</h3><p class="text-grey">Fixado</p></div>
+        </section>
+
+        <section class="card actions-panel">
+            <h2>Minhas Ações</h2>
+            <p>Registe os seus serviços concluídos e consulte o seu histórico.</p>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
+                <button class="btn btn-gold" onclick="navigateTo('register_service.html')">✂️ Registar Serviço Concluído (CU-01)</button>
+                <button class="btn btn-outline" onclick="navigateTo('my_history.html')">📜 Ver Meu Histórico e Remuneração (CU-03)</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

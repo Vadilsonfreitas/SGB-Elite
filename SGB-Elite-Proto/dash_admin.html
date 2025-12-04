@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB-Elite | Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="assets/logo.png" alt="SGB-Elite"></div>
+        <div class="nav-menu">
+            <span style="margin-right: 15px;">Olá, <span id="user-name-display" class="gold-text"></span> (<span id="user-role-display"></span>)</span>
+            <button class="btn btn-logout" onclick="logout()">SAIR</button>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <h1>Painel Administrativo (Visão Global)</h1>
+        
+        <section class="stats-grid">
+            <div class="stat-card"><h3>Receita Total Hoje</h3><p>15.500 Kz</p></div>
+            <div class="stat-card"><h3>Total Atendimentos</h3><p>32</p></div>
+            <div class="stat-card"><h3>Comissões a Pagar</h3><p>4.200 Kz</p></div>
+            <div class="stat-card"><h3>Mensalidades Vencidas</h3><p style="color: red;">3</p></div>
+        </section>
+
+        <section class="card actions-panel">
+            <h2>Gestão Estratégica & Operacional</h2>
+            <p>Acesso total a todas as funcionalidades do sistema.</p>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
+                <button class="btn btn-gold" onclick="navigateTo('reports_full.html')">📈 Relatórios Financeiros Completos</button>
+                <button class="btn btn-outline" onclick="navigateTo('manage_membership.html')">💰 Gerir Mensalidades (Visão Gestor)</button>
+                <button class="btn btn-outline" onclick="navigateTo('register_service.html')">✂️ Registar Serviço (Visão Operacional)</button>
+                <button class="btn btn-outline">👥 Gerir Funcionários (Simulado)</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
