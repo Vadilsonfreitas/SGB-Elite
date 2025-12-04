@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB-Elite | Gestão</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="assets/logo.png" alt="SGB-Elite"></div>
+        <div class="nav-menu">
+            <span style="margin-right: 15px;">Olá, <span id="user-name-display" class="gold-text"></span> (<span id="user-role-display"></span>)</span>
+            <button class="btn btn-logout" onclick="logout()">SAIR</button>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <h1>Painel de Atendimento (Recepção)</h1>
+        
+        <section class="stats-grid">
+            <div class="stat-card"><h3>Registados no Caixa Hoje</h3><p>32</p></div>
+            <div class="stat-card"><h3>Receita em Dinheiro</h3><p>10.000 Kz</p></div>
+            <div class="stat-card"><h3>Mensalistas Ativos</h3><p>45</p></div>
+        </section>
+
+        <section class="card actions-panel">
+            <h2>Operações de Balcão</h2>
+            <p>Registo de clientes, serviços e controlo de pagamentos.</p>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
+                <button class="btn btn-gold" onclick="navigateTo('register_service.html')">✂️ Registar Novo Atendimento (CU-01)</button>
+                <button class="btn btn-gold" onclick="navigateTo('manage_membership.html')">💰 Gerir/Renovar Mensalidades (CU-02)</button>
+                <button class="btn btn-outline">📅 Ver Agendamentos (Simulado)</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

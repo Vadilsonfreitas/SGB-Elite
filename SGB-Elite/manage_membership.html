@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB-Elite | Mensalidades</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="assets/logo.png" alt="SGB-Elite"></div>
+        <div class="nav-menu">
+            <button class="btn btn-outline" onclick="backToDashboard()">⬅ Voltar ao Painel</button>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <div class="card" style="max-width: 600px; margin: auto;">
+            <h2>💰 Gerir Mensalidades (CU-02)</h2>
+            <p>Renovar planos ou verificar status de clientes mensalistas.</p>
+            
+            <div class="input-group" style="display: flex; gap: 10px;">
+                <input type="text" placeholder="Buscar cliente por nome..." style="flex-grow: 1;">
+                <button class="btn btn-outline">Buscar</button>
+            </div>
+
+            <div style="margin-top: 30px; border-top: 1px solid var(--gold-dark); padding-top: 20px;">
+                <h3 style="color: var(--text-white);">Resultado: Cliente Exemplo</h3>
+                <p>Status Atual: <span style="color: red; font-weight: bold;">VENCIDA (Há 2 dias)</span></p>
+                <button class="btn btn-gold" onclick="simularRenovacao()" style="width: 100%; margin-top: 20px;">RENOVAR PLANO (30 DIAS)</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

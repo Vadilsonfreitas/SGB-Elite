@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB-Elite | Registar Serviço</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="assets/logo.png" alt="SGB-Elite"></div>
+        <div class="nav-menu">
+            <button class="btn btn-outline" onclick="backToDashboard()">⬅ Voltar ao Painel</button>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <div class="card" style="max-width: 600px; margin: auto;">
+            <h2>✂️ Registar Novo Atendimento (CU-01)</h2>
+            <p>Preencha os dados do serviço realizado.</p>
+            
+            <form onsubmit="event.preventDefault(); simularRegisto();">
+                <div class="input-group">
+                    <label>CLIENTE (Nome ou ID):</label>
+                    <input type="text" placeholder="Buscar cliente..." required>
+                </div>
+                <div class="input-group">
+                    <label>TIPO DE CLIENTE:</label>
+                    <select required>
+                        <option>Avulso (Pagamento Imediato)</option>
+                        <option>Mensalista (Validar Plano)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>BARBEIRO RESPONSÁVEL:</label>
+                    <select required>
+                        <option>Selecione...</option>
+                        <option>João Corte</option>
+                        <option>Marcos Navalha</option>
+                        <option>Eu mesmo (Logado)</option>
+                    </select>
+                </div>
+                 <div class="input-group">
+                    <label>SERVIÇO:</label>
+                    <select disabled>
+                        <option selected>Corte de Cabelo Padrão - 500 Kz</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 20px;">CONFIRMAR REGISTO</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
